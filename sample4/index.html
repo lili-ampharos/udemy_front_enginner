@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<!-- html:5と入力後tabキーで最初の記述が出てくる -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODAY</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    <header>
+        <h1>TODAY</h1>
+    </header>
+    <div class="container">
+        <!-- オブジェクト.メソッド('パラメーター'); -->
+        <script>
+            // 日付を表示する
+            var today=new Date();
+            var todayHtml = today.getFullYear() + '/' + (today.getMonth()+1) + '/' + today.getDate()
+            document.write('<p class="date">'+todayHtml+'</p>');
+        </script>
+    </div>
+
+</body>
+</html>
